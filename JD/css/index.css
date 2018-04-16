@@ -1,0 +1,220 @@
+    @charset "UTF-8";
+
+    /*sub-banner部分start*/
+    .sub-banner{
+        position: relative;
+    }
+    .sub-banner a{
+        position: absolute;
+        top: 0;     /*可以不加*/
+        left: 0;    /*可以不加*/
+        width: 100%;
+        height: 644px;
+        background: url("../images/subbanner.jpg") no-repeat center top;
+
+    }
+    /*sub-banner部分end*/
+
+    /*main部分start*/
+    .main{
+        position: relative;
+        /*z-index: 1; 不要加 会出问题*/
+    }
+    .main-slider{
+        float: left;
+        margin:12px 0 0 220px;
+        width: 730px;
+        height: 454px;
+        position: relative;
+    }
+    .main-slider ul{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -66px;
+    }
+    .main-slider li{
+        float: left;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 18px;
+        background-color: #3E3E3E;
+        margin: 0 2px;
+        cursor: pointer;
+        color: #fff;
+    }
+    .main-slider .current{
+        background-color: #C81623;
+    }
+    .arrow a{
+        position: absolute;
+        top: 50%;
+        margin-top: -31px;
+        width: 28px;
+        height: 62px;
+        background: rgba(0,0,0,0.3);
+        color: #fff;
+        text-align: center;
+        font: 400 22px/62px "simsun";
+    }
+    .arrow a:hover{
+        background: rgba(0,0,0,0.7);
+    }
+    .arrow .arrow-left{
+        left: 0;
+        border-radius: 0 10px 10px 0;
+    }
+    .arrow .arrow-right{
+        right: 0;
+        border-radius: 10px 0 0 10px;
+    }
+    .main-news{
+        float: right;
+        height: 466px;
+        width: 250px;
+    }
+    .main-news-top{
+        height: 372px;
+        width: 248px;
+        overflow: hidden;
+        margin: 12px 0 5px 0;
+        border: 1px solid #E4E4E4;
+    }
+    .main-news-top-faster{
+        height: 163px;
+        border-bottom: 1px dashed #E4E4E4;
+    }
+    .main-news-top-faster-title{
+        height: 32px;
+        padding: 0 15px;
+        line-height: 32px;
+        overflow: hidden;
+        border-bottom: 1px dotted #E8E8E7;
+    }
+    .main-news-top-faster-title h2{
+        float: left;
+        font: 400 16px/32px "microsoft yehei";
+    }
+    .main-news-top-faster-title a{
+        float: right;
+        font-family: "consolas";
+    }
+    .main-news-top-faster-content{
+        padding: 5px 0 0 15px;
+    }
+    .main-news-top-faster-content li{
+        height: 24px;
+        line-height: 24px;
+        overflow: hidden;
+    }
+    .main-news-top-faster-content span{
+        font-weight: 700;
+        margin-right: 5px;
+    }
+    .main-news-top-money ul{
+        width: 260px;
+    }
+    .main-news-top-money li{
+        width: 62px;
+        height: 70px;
+        float: left;
+        margin-left: -1px;
+        margin-top: -1px;
+        border: 1px solid #E8E8E7;
+        border-top: 0 none;
+    }
+    .main-news-top-money a{
+        display: block;
+        width: 62px;
+        padding-top: 40px;
+        height: 30px;
+        position: relative;
+        text-align: center;
+        line-height: 30px;
+
+    }
+    .main-news-top-money i{
+        position: absolute;
+        top: 13px;
+        left: 18px;
+        width: 25px;
+        height: 25px;
+        background: url("../images/fly.png") no-repeat;
+    }
+    .main-news-top-money .main-news-top-money-icon2{
+        background-position: 0 -25px;
+    }
+    .main-news-top-money .main-news-top-money-icon3{
+        background-position: 0 -50px;
+    }
+    .main-news-top-money .main-news-top-money-icon4{
+        background-position: 0 -75px;
+    }
+    .main-news-top-money .main-news-top-money-icon5{
+        background-position: 0 -100px;
+    }
+    .main-news-top-money .main-news-top-money-icon6{
+        background-position: 0 -125px;
+    }
+    .main-news-top-money .main-news-top-money-icon7{
+        background-position: 0 -150px;
+    }
+    .main-news-top-money .main-news-top-money-icon8{
+        background-position: 0 -175px;
+    }
+    .main-news-top-money .main-news-top-money-icon9{
+        background-position: 0 -250px;
+    }
+    .main-news-top-money .main-news-top-money-icon10{
+        background-position: 0 -200px;
+    }
+    .main-news-top-money .main-news-top-money-icon11{
+        background-position: 0 -275px;
+    }
+    .main-news-top-money .main-news-top-money-icon12{
+        background-position: 0 -225px;
+    }
+    .main-news-top-money span{
+        position: absolute;
+        top: -5px;
+        right: 3px;
+        font-weight: 700;
+        color: deepskyblue;
+    }
+    .main-news-top-money span:hover{
+        color: firebrick;
+    }
+    /*main部分end*/
+
+    /*today部分start*/
+    .today{
+        /*!*margin: 10px auto 20px;*! 上面版心 w 用了auto 下面用了0 不用auto会被层叠掉*/
+        position: relative;
+        padding: 10px 0 20px;
+    }
+    .today-left{
+        float: left;
+    }
+    .today-left a{
+        display: block;
+        width: 210px ;
+        height: 151px;
+        background: url("../images/pic1.jpg") no-repeat;
+    }
+    .today-right{
+        width: 1000px;
+        float: right;
+        overflow: hidden;
+        position: relative;
+    }
+    .today-right ul{
+        width: 450%;
+    }
+    .today-right li{
+        float: left;
+        margin-left: 1px;
+    }
+    /*today部分end*/
+
